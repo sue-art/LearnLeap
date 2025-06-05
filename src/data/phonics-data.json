@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "letter": "A",
+    "sound": "/æ/",
+    "image": "apple.png",
+    "examples": ["apple", "ant", "cat"]
+  },
+  {
+    "id": 2,
+    "letter": "B",
+    "sound": "/b/",
+    "image": "ball.png",
+    "examples": ["ball", "bat", "bed"]
+  },
+  {
+    "id": 3,
+    "letter": "C",
+    "sound": "/k/",
+    "image": "cat.png",
+    "examples": ["cat", "car", "cup"]
+  }
+]

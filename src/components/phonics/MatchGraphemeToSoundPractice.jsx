@@ -1,0 +1,48 @@
+import React, { useState } from 'react';
+
+export default function MatchGraphemeToSoundPractice({ item, onAnswer }) {
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = () => {
+    setIsSubmitted(true);
+    if (onAnswer) {
+      onAnswer(selectedOption === item.answer);
+    }
+  };
+
+  return (
+    <div className="p-4 border rounded-lg shadow-sm bg-green-50">
+      <p className="text-lg font-semibold mb-2">Match the grapheme <span className="text-purple-600">{item.grapheme}</span> to its sound:</p>
+      <div className="space-y-2 mb-4">
+        {item.options.map((option, index) => (
+          <button
+            key={index}
+            onClick={() => !isSubmitted && setSelectedOption(option)}
+            className={`block w-full p-2 text-left rounded
+                        ${selectedOption === option ? 'bg-purple-200' : 'bg-white hover:bg-gray-100'}
+                        ${isSubmitted && option === item.answer ? 'ring-2 ring-green-500' : ''}
+                        ${isSubmitted && selectedOption === option && option !== item.answer ? 'ring-2 ring-red-500' : ''}`}
+            disabled={isSubmitted}
+          >
+            {option}
+          </button>
+        ))}
+      </div>
+      {!isSubmitted && (
+        <button
+          onClick={handleSubmit}
+          disabled={!selectedOption}
+          className="px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-600 disabled:bg-gray-300"
+        >
+          Submit
+        </button>
+      )}
+      {isSubmitted && (
+        <p className={`mt-2 text-sm font-semibold ${selectedOption === item.answer ? 'text-green-600' : 'text-red-600'}`}>
+          {selectedOption === item.answer ? 'Correct!' : `Incorrect. The answer is ${item.answer}.`}
+        </p>
+      )}
+    </div>
+  );
+}

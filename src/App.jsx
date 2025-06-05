@@ -6,7 +6,8 @@ import AboutPage from "./pages/AboutPage";
 import LearningListPage from "./pages/LearningListPage";
 import LoginPage from "./pages/LoginPage";
 import "./App.css"; // Assuming App.css might be used or created by Vite
-import { NavMain } from "./components/dashboard/NavMain"; // Adjust the import path as necessary
+import { NavMain } from "./components/dashboard/NavMain";
+
 function App() {
   return (
     <Router>

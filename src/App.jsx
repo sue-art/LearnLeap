@@ -10,12 +10,12 @@ import "./App.css"; // Assuming App.css might be used or created by Vite
 import { NavMain } from "./components/dashboard/NavMain";
 import Layout from "./components/layout/Layout";
 import BookPage from "./pages/BookPage";
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <Router>
       <Layout>
-        <NavMain />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/dashboard" element={<DashboardPage />} />

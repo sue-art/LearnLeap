@@ -1,0 +1,68 @@
+[
+  {
+    "id": "phoneme",
+    "name": "Phoneme",
+    "definition": "The smallest unit of sound in our spoken language. Pronouncing the word cat involves blending three phonemes: /k/ /ae/ /t/.",
+    "examples": [
+      { "word": "cat", "phonemes": ["/k/", "/æ/", "/t/"] },
+      { "word": "sun", "phonemes": ["/s/", "/ʌ/", "/n/"] }
+    ],
+    "practiceItems": [
+      { "type": "identify_sound", "word": "ship", "options": ["/sh/", "/s/", "/h/"], "answer": "/sh/" }
+    ]
+  },
+  {
+    "id": "grapheme",
+    "name": "Grapheme",
+    "definition": "A written letter or a group of letters representing one speech sound. Examples: b, sh, ch, igh, eigh.",
+    "examples": [
+      { "sound": "/b/", "graphemes": ["b"] },
+      { "sound": "/ʃ/", "graphemes": ["sh", "ch (in machine)"] }
+    ],
+    "practiceItems": [
+      { "type": "match_grapheme_to_sound", "grapheme": "igh", "options": ["/aɪ/", "/ɪ/", "/iː/"], "answer": "/aɪ/" }
+    ]
+  },
+  {
+    "id": "onset",
+    "name": "Onset",
+    "definition": "An initial consonant or consonant cluster. In the word name, n is the onset; in the word blue, bl is the onset.",
+    "examples": [],
+    "practiceItems": []
+  },
+  {
+    "id": "rime",
+    "name": "Rime",
+    "definition": "The vowel or vowel and consonant(s) that follow the onset. In the word name, ame is the rime.",
+    "examples": [],
+    "practiceItems": []
+  },
+  {
+    "id": "digraph",
+    "name": "Digraph",
+    "definition": "Two letters that represent one speech sound (diphthong). Examples: sh, ch, th, ph.",
+    "examples": [],
+    "practiceItems": []
+  },
+  {
+    "id": "vowel_digraph",
+    "name": "Vowel Digraph",
+    "definition": "Two letters that together make one vowel sound. Examples: ai, oo, ow.",
+    "examples": [],
+    "practiceItems": []
+  },
+  {
+    "id": "schwa",
+    "name": "Schwa",
+    "definition": "The vowel sound sometimes heard in an unstressed syllable and that most often sounds like /uh/ or the short /u/ sound. Example: the “a” in again or balloon. All English vowels have a schwa sound.",
+    "examples": [],
+    "practiceItems": []
+  },
+  {
+    "id": "morpheme",
+    "name": "Morpheme",
+    "definition": "The smallest meaningful units of language. The word cat is a morpheme. Not all morphemes stand alone as words; some are attached to words, usually as affixes. These are called bound morphemes. Examples include: non-, -est, -ing, -er, -ion.",
+    "examples": [],
+    "practiceItems": []
+  }
+]

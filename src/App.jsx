@@ -7,12 +7,12 @@ import LearningListPage from "./pages/LearningListPage";
 import LoginPage from "./pages/LoginPage";
 import "./App.css"; // Assuming App.css might be used or created by Vite
 import { NavMain } from "./components/dashboard/NavMain";
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <Router>
-      <div>
-        <NavMain />
+      <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/dashboard" element={<DashboardPage />} />
@@ -20,7 +20,7 @@ function App() {
           <Route path="/learning-list" element={<LearningListPage />} />
           <Route path="/login" element={<LoginPage />} />
         </Routes>
-      </div>
+      </Layout>
     </Router>
   );
 }

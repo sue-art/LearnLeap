@@ -37,6 +37,18 @@ export function NavMain() {
 
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
+            <Link to="/phonics">Learn Phonics</Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+
+        <NavigationMenuItem>
+          <NavigationMenuLink asChild>
+            <Link to="/books">Books</Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+
+        <NavigationMenuItem>
+          <NavigationMenuLink asChild>
             <Link to="/login">Login</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>

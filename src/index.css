@@ -81,6 +81,8 @@
   body {
     background-color: var(--background);
     color: var(--foreground);
+    font-family: "Inter","Inter Fallback", sans-serif;
+    font-feature-settings: "ss01" on, "ss02" on, "ss03" on, "ss04" on, "ss05" on, "ss06" on, "ss07" on, "ss08" on, "ss09" on, "ss10" on;
   }
 }
 
